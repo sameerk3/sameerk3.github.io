@@ -11,6 +11,7 @@
   :root {
     --ink: #111111;
     --soft: #6b6b6b;
+    --faint: #999993;
     --bg: #fbfbf9;
     --stack-gap: clamp(20px, 4vw, 32px);
   }
@@ -66,12 +67,34 @@
     color: var(--soft);
     letter-spacing: 0.02em;
   }
+  .links {
+    font-size: clamp(12px, 1.8vw, 14px);
+    line-height: 1.6;
+    color: var(--faint);
+    letter-spacing: 0.03em;
+  }
+  .links a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .links a:hover {
+    color: var(--ink);
+  }
+  .links span {
+    margin: 0 0.35em;
+    opacity: 0.45;
+  }
 </style>
 </head>
 <body>
 <main>
   <div class="logo" aria-label="sameerk">[sameerk<span class="caret" aria-hidden="true"></span></div>
   <p class="tagline">building...</p>
+  <p class="links">
+    <a href="https://github.com/sameerk3" target="_blank" rel="noopener noreferrer">github</a>
+    <span>·</span>
+    <a href="https://www.linkedin.com/in/sameer-kh/" target="_blank" rel="noopener noreferrer">linkedin</a>
+  </p>
 </main>
 </body>
 </html>
